@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>大数据管理平台</title>
+<meta name="keywords" content="大数据,招聘">
+<link rel="icon" type="image/x-icon" href="logo/favicon.ico">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/nav.css?id=3" >
+<link rel="stylesheet" type="text/css" href="css/index.css?id=10" >
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/raphael-min.js"></script>
+<script type="text/javascript" src="js/morris.min.js"></script>
+<script type="text/javascript" src="js/jquery.dashboard.js"></script>
+<script type="text/javascript" src="js/DataRequest.js"></script>
+</head>
+<body>
+    <div class="container">
+	    <div id="nav" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+	    	<div id="nav-head"><span class="glyphicon glyphicon-menu-hamburger"></span> <font class="hidden-sm hidden-xs">Navigation</font></div>
+	    	<hr>
+	    	<div id="nav-menu">
+		    	<ul>
+		    		<a href="index.html"><li class="current"><span class="glyphicon glyphicon-home"></span> <font class="hidden-sm hidden-xs">首页</font></li></a>
+		    		<a href="dataShow.html"><li><span class="glyphicon glyphicon-stats"></span> <font class="hidden-sm hidden-xs">大数据简介</font></li></a>         
+	          		<a href="employmentShow.html"><li><span class="glyphicon glyphicon-glass"></span> <font class="hidden-sm hidden-xs">招聘展示</font></li></a>
+		    		<a href="message.html"><li><span class="glyphicon glyphicon-edit"></span> <font class="hidden-sm hidden-xs">您的反馈</font></li></a>
+		    	</ul>
+	    	</div>
+	    </div>
+	    <div id="content" class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+		   	<div id="in-head" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		   		<span class="glyphicon glyphicon-refresh"></span>&nbsp;Internet Information：
+		   	</div>
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+			 	<div id="intro1">
+			 		<h4 class ="intro-title"><span class="glyphicon glyphicon-repeat" style="margin: 0 0.5em"></span>全部数据：</h4>
+			 		<hr>
+			 		<div style="display: flex;"><span class="glyphicon glyphicon-user " style="color: rgba(0,0,0,0.7);margin:0.1em 1.7em 0.8em 0.6em;font-size: 3.2em;"></span><span class="intro-font"><span id="total_count">7.31亿</span><br><span style="font-size: 0.5em;color: rgba(152,176,173,1);">Until today</span></span></div>
+			 		<div class="progress active">
+						<div class="progress-bar progress-bar-info" style="width: 70%; height: 0.6em;"></div>
+					</div>
+			 	</div>
+		 	</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+			 	<div id="intro2">
+			 		<h4 class ="intro-title"><span class="glyphicon glyphicon-repeat" style="margin: 0 0.5em"></span>抓取职业个数：</h4>
+			 		<hr>
+			 		<div style="display: flex;"><span class="glyphicon glyphicon-phone" style="color: rgba(0,0,0,0.7);margin:0.1em 1.7em 0.8em 0.6em;font-size: 3.2em;"></span><span class="intro-font"><span id="position_count">???</span><br><span style="font-size: 0.5em;color: rgba(152,176,173,1);">Until today</span></span></div>
+			 		<div class="progress active">
+						<div class="progress-bar progress-bar-success" style="width: 60%; height: 0.6em;"></div>
+					</div>
+			 	</div>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+			 	<div id="intro3">
+			 		<h4 class ="intro-title"><span class="glyphicon glyphicon-repeat" style="margin: 0 0.5em"></span>抓取网站：</h4>
+			 		<hr>
+			 		<div style="display: flex;"><span class="glyphicon glyphicon-briefcase" style="color: rgba(0,0,0,0.7);margin:0.1em 1.7em 0.8em 0.6em;font-size: 3.2em;"></span><span class="intro-font">5<br><span style="font-size: 0.5em;color: rgba(152,176,173,1);">Until today</span></span></div>
+			 		<div class="progress active">
+						<div class="progress-bar progress-bar-warning" style="width: 60%; height: 0.6em;"></div>
+					</div>
+			 	</div>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+			 	<div id="intro4">
+			 		<h4 class ="intro-title"><span class="glyphicon glyphicon-repeat" style="margin: 0 0.5em"></span>平均薪资：</h4>
+			 		<hr>
+			 		<div style="display: flex;"><span class="glyphicon glyphicon-yen" style="color: rgba(0,0,0,0.7);margin:0.1em 1.7em 0.8em 0.6em;font-size: 3.2em;"></span><span class="intro-font">1.10万<br><span style="font-size: 0.5em;color: rgba(152,176,173,1);">Until today</span></span></div>
+			 		<div class="progress active">
+						<div class="progress-bar progress-bar-danger" style="width: 75%; height: 0.6em;"></div>
+					</div>
+			 	</div>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+			    <div id="morris-donut">
+			    	<div id="donut-tit"><span class="glyphicon glyphicon-stats"></span>&nbsp;文化程度：</div>
+			    	<div id="morris-donut-example" style="position: relative;top:2.5em;"></div>
+			    </div>
+		    </div>
+
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+			    <div id="table-brower">
+			    	<div id="table-brower-tit"><span class="glyphicon glyphicon-stats"></span>&nbsp;数据来源：</div>
+			    	<table class="table table-striped">
+			    		<tr><td>Google Chrome</td><td><span class="table-percentage">37%</span></td></tr>
+			    		<tr><td>Opera</td><td><span class="table-percentage">11%</span></td></tr>
+			    		<tr><td>Mozila Firefox</td><td><span class="table-percentage">12%</span></td></tr>
+			    		<tr><td>Safari</td><td><span class="table-percentage">12%</span></td></tr>
+			    		<tr><td>Internet Explorer</td><td><span class="table-percentage">15%</span></td></tr>
+			    		<tr><td>Other</td><td><span class="table-percentage">13%</span></td></tr>
+			    	</table>
+			   	</div>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div id="morris-line">
+				    <div id="line-tit"><span class="glyphicon glyphicon-stats"></span>&nbsp;工作经验：</div>
+			        <canvas id="bingtu"  width="280" height="280"></canvas>	  	
+			        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 center-line">
+		                <div style="border-left:1em solid rgba(91,105,188,1);">&nbsp;&nbsp;应届</div>
+		            </div>
+		            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 center-line">
+		                <div style="border-left:1em solid rgba(53,184,224,1) ">&nbsp;&nbsp;1~3年</div>
+		            </div>
+		            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 center-line">
+		                <div style="margin-top:1em;border-left:1em solid rgba(255,138,204,1) ">&nbsp;&nbsp;3~5年</div>
+		            </div>
+		            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 center-line">
+		                <div style="margin-top:1em;margin-left:-1px;border-left:1em solid rgba(255,188,188,1) ">&nbsp;&nbsp;5年以上</div>
+			      	</div>
+				</div>
+			</div>
+
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			    <div id="morris-bar">
+			    	<div id="bar-tit"><span class="glyphicon glyphicon-stats"></span>&nbsp;职位需求一览</div>
+			    	<div id="morris-bar-example"></div>
+			    </div>
+		    </div>
+		 
+	    
+	 	</div><!--content-->
+    </div><!-- container -->
+</body>
+</html>

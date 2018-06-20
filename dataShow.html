@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>大数据管理平台</title>
+<meta name="keywords" content="大数据，介绍">
+<link rel="icon" type="image/x-icon" href="logo/favicon.ico">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link href="css/paper-dashboard.css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="css/nav.css?id=3" >
+<link href="css/themify-icons.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script src="js/chartist.min.js"></script>
+<script src="js/demo.js"></script>
+<script type="text/javascript">$(()=>{demo.initChartist();});</script>
+</head>
+<body>
+    <div class="container">
+	    <div id="nav" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+	    	<div id="nav-head"><span class="glyphicon glyphicon-menu-hamburger"></span> <font class="hidden-sm hidden-xs">Navigation</font></div>
+	    	<hr>
+	    	<div id="nav-menu">
+		    	<ul>
+		    		<a href="index.html"><li><span class="glyphicon glyphicon-home"></span> <font class="hidden-sm hidden-xs">首页</font></li></a>
+		    		<a href="dataShow.html"><li class="current"><span class="glyphicon glyphicon-stats"></span> <font class="hidden-sm hidden-xs">大数据简介</font></li></a>         
+	          		<a href="employmentShow.html"><li><span class="glyphicon glyphicon-glass"></span> <font class="hidden-sm hidden-xs">招聘展示</font></li></a>
+		    		<a href="message.html"><li><span class="glyphicon glyphicon-edit"></span> <font class="hidden-sm hidden-xs">您的反馈</font></li></a>
+		    	</ul>
+	    	</div>
+	    </div>
+	    <div class="content" class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+	    	<div class="main-panel">
+		    <div class="content">
+		      <div class="container-fluid">
+		        <div class="row">
+		          <div class="col-lg-3 col-sm-6">
+		            <div class="card">
+		              <div class="content">
+		                <div class="row">
+		                  <div class="col-xs-5">
+		                    <div class="icon-big icon-warning text-center"> <i class="ti-server"></i> </div>
+		                  </div>
+		                  <div class="col-xs-7">
+		                    <div class="numbers">
+		                      <p>预计2020全球数据总量</p>
+		                      40ZB </div>
+		                  </div>
+		                </div>
+		                <div class="footer">
+		                  <hr />
+		                  <div class="stats"> <i class="ti-reload"></i> Volume </div>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-lg-3 col-sm-6">
+		            <div class="card">
+		              <div class="content">
+		                <div class="row">
+		                  <div class="col-xs-5">
+		                    <div class="icon-big icon-success text-center"> <i class="ti-wallet"></i> </div>
+		                  </div>
+		                  <div class="col-xs-7">
+		                    <div class="numbers">
+		                      <p>2016年中国大数据市场规模</p>
+		                      168亿元 </div>
+		                  </div>
+		                </div>
+		                <div class="footer">
+		                  <hr />
+		                  <div class="stats"> <i class="ti-calendar"></i> Velocity </div>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-lg-3 col-sm-6">
+		            <div class="card">
+		              <div class="content">
+		                <div class="row">
+		                  <div class="col-xs-5">
+		                    <div class="icon-big icon-danger text-center"> <i class="ti-pulse"></i> </div>
+		                  </div>
+		                  <div class="col-xs-7">
+		                    <div class="numbers">
+		                      <p>全球数据总量增长速度</p>
+		                      58%/年 </div>
+		                  </div>
+		                </div>
+		                <div class="footer">
+		                  <hr />
+		                  <div class="stats"> <i class="ti-timer"></i> Variety </div>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-lg-3 col-sm-6">
+		            <div class="card">
+		              <div class="content">
+		                <div class="row">
+		                  <div class="col-xs-5">
+		                    <div class="icon-big icon-info text-center"> <i class="ti-twitter-alt"></i> </div>
+		                  </div>
+		                  <div class="col-xs-7">
+		                    <div class="numbers">
+		                      <p>全球大数据信息覆盖智能设备约</p>
+		                      46亿台 </div>
+		                  </div>
+		                </div>
+		                <div class="footer">
+		                  <hr />
+		                  <div class="stats"> <i class="ti-reload"></i> Value </div>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="row">
+		          <div class="col-md-12">
+		            <div class="card">
+		              <div class="header">
+		                <h4 class="title text-center">海量数据，无限未来<br>
+		                  <br>
+		                </h4>
+		                <p class="category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在现实世界里，物质、能量、信 息是共同构成现实在互联网及智能硬件快速普及的当下，数据以爆炸方式增长。据 Forrester的研究结果，目前在线或移动金融交易、社交媒体、GPS 坐标等数据源每天要产生超过2.5 EB（1EB为 2^60 次方）的海量数据。据IDC预计，全球数据总量增长率将维持50%左右，2020年全球数据总量将达到40ZB；中 国将达到 8.6ZB，占全球的 21%。根据中国信息产业研究院的数据显示，2015 年中国大数据市场规模约为 116 亿元，同比增长 38%；预计未来几年，随着应用效果的逐步显现，中国大数据市场规模还将维持 40%左右的高增长。</p>
+		              </div>
+		              <div class="header">
+		                <h001 class="title text-center">全球数据量规模预测</h001>
+		                <p class="category">过去7年</p>
+		              </div>
+		              <div class="content">
+		                <div id="chartHours" class="ct-chart"></div>
+		                <div class="footer">
+		                  <div class="chart-legend"> <i class="fa fa-circle text-info"></i> 增速（%） <i class="fa fa-circle text-warning"></i> 数据量（ZB） </div>
+		                  <hr>
+		                  <div class="stats"> <i class="ti-reload"></i> 数据来源：chyxx.com </div>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="row">
+		          <div class="col-md-6">
+		            <div class="card">
+		              <div class="header">
+		                <h4 class="title">2017年国内大数据领域行业应用分布</h4>
+		                <p class="category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2017年，大数据行业应用方面共发生了81起投融资事件，其中，金融行业投融资事件最多为35起，医疗健康其次为12起投资事件。据统计，中国商业银行和保险公司数据量积累已达到100TB以上级别。预计在2020年，我国金融大数据应用将达到 450 亿人民币。根据统计，我国目前医疗大数据领域的初创型企业超 1,000 余家，并且数量呈现逐年递增的趋势。目前超60%的医疗大数据企业于2010年后成立，企业数目在近几年呈现爆发式增长。</p>
+		              </div>
+		              <div class="content">
+		                <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
+		                <div class="footer">
+		                  <div class="chart-legend"> <i class="fa fa-circle text-info"></i> 金融 <i class="fa fa-circle text-danger"></i> 交通 <i class="fa fa-circle text-warning"></i> 医疗 <i class="fa fa-circle text-success"></i> 其他</div>
+		                  <hr>
+		                  <div class="stats"> <i class="ti-timer"></i> 数据来源：企名片 </div>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-6">
+		            <div class="card ">
+		              <div class="header">
+		                <h4 class="title">全球与中国大数据市场规模模型对比</h4>
+		                <p class="category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;据 Gartner 2015 年统计报告显示，共有 75%以上的公司计划在未来两年内投资或计划投资大数据领域。在国内，投资者基于对大数据市场前景的看好，投资热度不断提高。国内投融资金额持续增加，2015 年在大数据领域投融资金额达到 24.5 亿美元，总计超过 120 起；而 2016 年仅上半 年就超过 80 起融资。其中投资阶段也由天使轮及 A轮向 B轮及之后发展，公司商业模式由初期摸索逐渐成型。在下一阶段，有望实现大数据商业模式的进一步落地， 大数据产业爆发在即。</p>
+		              </div>
+		              <div class="content">
+		                <div id="chartActivity" class="ct-chart"></div>
+		                <div class="footer">
+		                  <div class="chart-legend"> <i class="fa fa-circle text-info"></i> 全球（亿美元） <i class="fa fa-circle text-warning"></i> 中国（亿元人民币） </div>
+		                  <hr>
+		                  <div class="stats"> <i class="ti-check"></i> 数据来源：chyxx.com </div>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="col-md-6">
+		          <div class="card ">
+		            <div class="header">
+		              <h4 class="title">全球与国内大数据融资市场对比</h4>
+		              <p class="category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目前，大数据以爆炸式的发展速度蔓延至各行各业，随着各国不断加大对其的扶持力度，加之资本的青睐及投资，使全球大数据市场规模保持着高速增长态势。据估计，2020 年政府大数据市场规模将达到 574.74 亿元，同时其细分领域众 多，按照需求的紧迫性不同，可以实现层次性发展，在不同阶段释放不同细分领域的发展空间，发展潜力巨大。2015年全球大数据市场规模达到421亿美元，同比增长了47.7%。以此增速进行推算，到2020年，全球大数据市场规模将突破3000亿美元。</p>
+		            </div>
+		            <div class="content">
+		              <div id="chartActivity1" class="ct-chart"></div>
+		              <div class="footer">
+		                <div class="legend"> <i class="fa fa-circle text-info"></i> 国内（亿美元） <i class="fa fa-circle text-danger"></i> 全球（亿美元） </div>
+		                <hr>
+		                <div class="stats"> <i class="fa fa-check"></i> 数据来源：Wikibon、中商产业研究院 </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="col-md-6">
+		          <div class="card">
+		            <div class="header">
+		              <h4 class="title">2018年中国大数据产业细分市场占比预测</h4>
+		              <p class="category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国的大数据市场正式起步于2009年，目前已经进入高速发展期。随着十三五规划将大数据上升至国家战略层面，未来市场空间巨大。2015年，我国的大数据产业市场规模已达1105.6亿元，较2014年增长44.15%，其中大数据基础设施建设、大数据软件和大数据应用分别占比64.53%、25.47%和10%。预计到2018年，中国大数据产业市场规模将达4163亿元，其中大数据基础设施建设占比降至45%，大数据应用的市场规模占比将提升至27%，未来仍将提高。</p>
+		            </div>
+		            <div class="content">
+		              <div id="chartPreferences1" class="ct-chart ct-perfect-fourth"></div>
+		              <div class="footer">
+		                <div class="legend"> <i class="fa fa-circle text-info"></i> 大数据基础建设市场规模 <i class="fa fa-circle text-danger"></i> 大数据软件市场规模 <i class="fa fa-circle text-warning"></i> 大数据应用市场规模 </div>
+		                <hr>
+		                <div class="stats"> <i class="fa fa-clock-o"></i> 数据来源：智研咨询 </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+	  		</div>
+	    </div>
+	</div>
+</body>
+</html>

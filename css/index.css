@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+/*content(right)*/
+#content{
+	margin-left:  16.66666667%;
+}
+#in-head{
+	color: rgba(152,176,173,1);
+	font-size: 1.3em;
+	margin: 0.5em auto;
+}
+#intro1,#intro2,#intro3,#intro4{
+	background-color: rgba(255,255,255,1);
+	border-radius: 0.5em;
+	height: 190px;
+	margin-top: 0.8em;
+	padding-top:0.5em;
+}
+.intro-title{
+	color: rgba(103,108,110,1);
+	font-weight: 700;
+}
+.intro-font{
+	color: rgba(80,84,88,1);
+	line-height: 1em;
+	margin-top: 0.5em;
+}
+.progress{
+	margin: 0 auto; 
+	height: 0.6em; 
+	width: 90%;
+}
+
+#morris-donut,#morris-line,#table-brower{
+	color: rgba(122,146,143,1);
+	background-color: rgba(255,255,255,1);
+	border-radius: 0.5em;
+	height:430px;
+	margin-top: 0.8em;
+}
+#donut-tit,#table-brower-tit,#line-tit,#bar-tit{
+	color: rgba(102,126,123,1);
+	font-size: 1.5em;
+	font-weight: 600;
+	line-height: 3em;
+	margin-left: 0.5em;
+	margin-bottom: 2em;
+}
+#line-tit{
+	margin-bottom: 1em;
+}
+#bingtu{
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 1.5em
+}
+#morris-donut-example{
+	height: 245px;
+	margin-bottom: 2em;
+}
+.donut-eg{
+	display: flex;
+	font-size: 1em;
+	margin-left: 35%;
+	margin-top: 1em;
+	line-height: 0.8em;
+}
+.donut-color{
+	width: 0.8em;
+	height: 0.8em;
+	margin-right: 0.5em;
+}
+.table-striped{
+	padding-left: 2em;
+}
+#table-brower td{
+	padding-left: 3em;
+}
+.table-percentage{
+	color: rgba(255,255,255,0.8);
+	background-color: rgba(199,199,199,1);
+	border-radius: 0.5em;
+	display:inline-block;
+	width: 3.8em;
+	text-align: center;
+}
+.line-color{
+	width: 0.8em;
+	height: 0.8em;
+	border-radius: 50%;
+	display: inline-block;
+}
+.center-line{
+	padding-left: 3em;
+}
+#morris-bar{
+	background-color: white;
+	margin-top: 0.8em;
+	padding-bottom: 2em;
+	border-radius: 0.5em;
+	color: rgba(117,117,117,1);
+	margin-bottom: 0.8em;
+}
+
+@media screen and (min-width: 720px) and (max-width: 991px){
+	#bingtu{
+		width: 30%;
+	}
+}
+@media screen and (max-width: 719px){
+	#bingtu{
+		width: 50%;
+	}
+}
+@media screen and (min-width: 992px){
+	#bingtu{
+		width: 50%;
+	}
+}
+@media screen and (min-width: 992px) and (max-width: 1156px){
+	.intro-font{
+		font-size: 1em;
+	}
+}
+@media screen and (max-width: 991px){
+	.intro-font{
+		font-size: 1.7em;
+	}
+}
+@media screen and (min-width: 1157px){
+	.intro-font{
+		font-size: 1.7em;
+	}
+}

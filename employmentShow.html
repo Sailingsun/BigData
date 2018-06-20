@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>大数据管理平台</title>
+<meta name="keywords" content="大数据，招聘城市">
+<link rel="icon" type="image/x-icon" href="logo/favicon.ico">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/nav.css" >
+<link rel="stylesheet" type="text/css" href="css/emstyle.css?id=1" >
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/employment.js?id=0"></script>
+<script src="js/morris.min.js"></script>
+<script src="js/raphael-min.js"></script>
+</head>
+<body>
+    <div class="container">
+	    <div id="nav" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+	    	<div id="nav-head"><span class="glyphicon glyphicon-menu-hamburger"></span> <font class="hidden-sm hidden-xs">Navigation</font></div>
+	    	<hr>
+	    	<div id="nav-menu">
+		    	<ul>
+		    		<a href="index.html"><li><span class="glyphicon glyphicon-home"></span> <font class="hidden-sm hidden-xs">首页</font></li></a>
+		    		<a href="dataShow.html"><li><span class="glyphicon glyphicon-stats"></span> <font class="hidden-sm hidden-xs">大数据简介</font></li></a>         
+	          		<a href="employmentShow.html"><li class="current"><span class="glyphicon glyphicon-glass"></span> <font class="hidden-sm hidden-xs">招聘展示</font></li></a>
+		    		<a href="message.html"><li><span class="glyphicon glyphicon-edit"></span> <font class="hidden-sm hidden-xs">您的反馈</font></li></a>
+		    	</ul>
+	    	</div>
+	    </div>
+	    <div class="content" class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+	    	<div id="page-wrapper" style="min-height: 625px;">
+            <div class="container-fluid" style="margin-left: 2em;">
+                <div class="row" style="margin-top: 2em;">
+                    <div class="col-lg-8 col-md-8">
+                        <div class="white-box" id="white-box1">
+                            <div id="head-tit"><span class="glyphicon glyphicon-stats"></span> 职位薪资：</div>
+                            <canvas id="myCanvas" width="670" height="430" style="margin-bottom: -1.8em;"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="white-box" id="white-box2">
+                            <h3 id="box-title"><span class="glyphicon glyphicon-stats"></span> 互联网招聘用户所在地域：</h3>
+                            <ul class="country-state">
+                                <li>
+                                    <h4 id="city1">???</h4>
+                                    <div class="pull-right"><h4 id="nbar1">14.1%</h4> </div>
+                                    <div class="progress" style="height: 0.3em;">
+                                        <div class="progress-bar progress-bar-danger" id="wbar1" style="width:14.1%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4 id="city2">???</h4>
+                                    <div class="pull-right"><h4 id="nbar2">4.8%</h4> </div>
+                                    <div class="progress" style="height: 0.3em;">
+                                        <div class="progress-bar progress-bar-info" id="wbar2" style="width:4.8%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                     <h4 id="city3">???</h4>
+                                    <div class="pull-right"><h4 id="nbar3">47%</h4> </div>
+                                    <div class="progress" style="height: 0.3em;">
+                                        <div class="progress-bar progress-bar-success" id="wbar3" style="width:47%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4 id="city4">???</h4>
+                                    <div class="pull-right"><h4 id="nbar4">2.8%</h4> </div>
+                                    <div class="progress" style="height: 0.3em;">
+                                        <div class="progress-bar progress-bar-info" id="wbar4" style="width:2.4%;"></div>
+                                    </div>
+                                </li> 
+                                <li>
+                                    <h4 id="city5">???</h4>
+                                    <div class="pull-right"><h4 id="nbar5">30.9%</h4> </div>
+                                    <div class="progress" style="height: 0.3em;">
+                                        <div class="progress-bar progress-bar-inverse" id="wbar5" style="width:30.9%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4 id="city6">???</h4>
+                                    <div class="pull-right"><h4 id="nbar6">0.8%</h4> </div>
+                                    <div class="progress" style="height: 0.3em;">
+                                        <div class="progress-bar progress-bar-danger" id="wbar6" style="width:0.8%;"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6 col-xs-12 col-sm-6">
+                        <div class="white-box m-b-0 bg-danger" style="height: 10.7em;">
+                            <h3 class="text-white box-title">综合招聘平台 <span class="pull-right">———— 前程无忧</span></h3>
+                        </div>
+                        <div class="white-box">
+                            <div class="row">
+                                <div class="p-l-20 p-r-20">
+                                    <div class="pull-left">
+                                        <div class="text-muted m-t-20">优势：基于多年经营积累的庞大企业和人才库，流量大，盈利模式已被检验，全人力资源产业拓展，业务形态丰富。<br>劣势：信息对称性不足、信息流单向无反馈、供需匹配度不高，服务体验急需提升。<br><br></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12 col-sm-6">
+                        <div class="white-box m-b-0 bg-info" style="height: 10.7em;">
+                            <h3 class="text-white box-title">分类信息网站 <span class="pull-right">———— 58同城</span></h3>
+                        </div>
+                        <div class="white-box">
+                            <div class="row">
+                                <div class="p-l-20 p-r-20">
+                                    <div class="pull-left">
+                                        <div class="text-muted m-t-20">优势：蓝领人群的招聘覆盖，分类信息网站积累的商户雇主数量庞大，针对蓝领招聘推出多种产品，产品功能不断丰富，社交、O2O等元素加入其中。<br>劣势：信息的真实性、有效性需提升，信息匹配度不高。<br><br></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12 col-sm-6">
+                        <div class="white-box m-b-0 bg-purple" style="height: 10.7em;">
+                            <h3 class="text-white box-title">社交招聘平台 <span class="pull-right">———— in</span></h3>
+                        </div>
+                        <div class="white-box">
+                            <div class="row">
+                                <div class="p-l-20 p-r-20">
+                                    <div class="pull-left">
+                                        <div class="text-muted m-t-20">优势：基于职场人士人脉社交的产品形态，通过社交进行求职招聘，为用户提供发现人脉。商业和工业机会、职场洞察等服务。<br>劣势：中国职业社交发展环境的受限，导致用户规模化发展缓慢，活跃度不高。<br><br></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12 col-sm-6">
+                        <div class="white-box m-b-0 bg-inverse" style="height: 10.7em;">
+                            <h3 class="text-white box-title">垂直招聘平台 <span class="pull-right">———— 拉勾</span></h3>
+                        </div>
+                        <div class="white-box">
+                            <div class="row">
+                                <div class="p-l-20 p-r-20">
+                                    <div class="pull-left">
+                                        <div class="text-muted m-t-20">优势：以某一垂直行业或针对职业生涯某一阶段的求职者为主要服务对象，融入公司职位等点评、职场洞察等服务，信息反馈较及时，用户体验相对较好。<br>劣势：规模化发展容易受限制。目前产品服务趋于同质化。<br><br></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="background-color: white;height: 525px;
+    border-radius: 0.4em;margin-top: 2em;margin-left: -0.1em;margin-right: 0em">
+                    <div id="stack-head"><span class="glyphicon glyphicon-stats"></span> 职位需求量：</div>
+                    <div id="morris-bar-stacked" style="height: 350px;width: 80%;margin: 0 auto;margin-top: 3em;"></div>
+                </div>
+        </div>
+    </div>
+    <!-- /#page-wrapper -->
+	    </div><!-- content -->
+	</div>
+	<div class="flotTip" style="display: none; position: absolute;"></div>
+
+<script src="js/jquery.morris.init.js?id=1"></script>
+</body>
+</html>
